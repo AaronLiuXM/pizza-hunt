@@ -2,7 +2,7 @@ const { schema, model, Schema } = require("mongoose");
 
 const PizzaSchema = new Schema({
   pizzaName: {
-    type: string,
+    type: String,
   },
   createBy: {
     type: String,
@@ -12,7 +12,7 @@ const PizzaSchema = new Schema({
     default: Date.now,
   },
   size: {
-    type: string,
+    type: String,
     default: "Large",
   },
   toppings: [],
